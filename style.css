@@ -1,0 +1,226 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-attachment: fixed;
+
+  background-image: radial-gradient(
+    circle farthest-corner at -14.3% -17.5%,
+    rgba(245, 168, 168, 1) 4%,
+    rgba(164, 168, 248, 1) 100.2%
+  );
+}
+
+h1 {
+  text-align: left;
+  font-family: "DotGothic16", helvetica, arial, sans-serif;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #243b4a;
+  font-size: 3em;
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
+.main {
+  color: #fbf9ff; /* ghost-white */
+
+  font-family: "ＭＳ ゴシック", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+    "游ゴシック", "游ゴシック体", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+    HiraKakuProN-W3, "TakaoExゴシック", TakaoExGothic, "MotoyaLCedar",
+    "Droid Sans Japanese", sans-serif;
+
+  margin: 80px 0 0 0;
+  letter-spacing: 2.5px;
+  text-align: center;
+  font-size: 1.4em;
+  width: 100%;
+}
+
+#pText:after {
+  content: "|";
+  display: inline-block;
+  animation: blink 1s infinite;
+  color: black;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+#startBtn {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  outline: none;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-color: whitesmoke;
+  background-color: transparent;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 1.66s;
+  animation-iteration-count: 1;
+  visibility: hidden;
+  transition: transform 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#startBtn:hover {
+  transition: all 1s;
+  background-color: transparent;
+  box-shadow: 0 5px 15px whitesmoke;
+  transform: scale(1.1);
+}
+
+#stopBtn {
+font-family: "DotGothic16", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  outline: none;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-color: whitesmoke;
+  background-color: transparent;
+}
+
+#stopBtn:hover {
+  transition: all 1s;
+  background-color: transparent;
+  box-shadow: 0 5px 15px whitesmoke;
+  transform: scale(1.1);
+}
+
+button {
+  padding: 12px;
+  border-radius: 50%;
+  border-style: none;
+}
+
+#gameButtonArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+  transition: background-color 1s ease-out;
+  outline: none;
+}
+
+#button1:hover {
+  transform: rotate(360deg);
+  background-color: green;
+}
+#button2 {
+  background: lightblue;
+  transition: background-color 1.25s ease-out;
+  outline: none;
+}
+
+#button2:hover {
+  background-color: blue;
+}
+
+#button3 {
+  background: pink;
+  transition: background-color 1.25s ease-out;
+  outline: none;
+}
+
+#button3:hover {
+  background-color: red;
+}
+#button4 {
+  background: lightyellow;
+  transition: background-color 1.25s ease-out;
+  outline: none;
+}
+
+#button4:hover {
+  background-color: yellow;
+}
+
+#button5 {
+  background: violet;
+  transition: background-color 1.25s ease-out;
+  outline: none;
+}
+
+#button5:hover {
+  background-color: purple;
+}
+
+
+#button1:active,
+#button1.lit {
+  background: green;
+}
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+#button3:active,
+#button3.lit {
+  background: red;
+}
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+#button5:active,
+#button5.lit {
+  background: purple;
+}

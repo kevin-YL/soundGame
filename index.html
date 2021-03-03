@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Memory Guessing Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <!--Importing Japanese typeface for nintendo-esque text theme, credit to Hayataki Masaharu-->
+    <link href="fonts/MS-PGothic/stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    <div class="main">
+      <p id="pText">
+        <!-- Welcome to the light and sound memory game!-->
+      </p>
+    </div>
+
+    <div id="buttonContainer">
+      <button id="startBtn" onclick="startGame()">
+        start
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        stop
+      </button>
+    </div>
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+      ></button
+      ><button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+      ></button>
+
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+      ></button>
+    </div>
+
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
